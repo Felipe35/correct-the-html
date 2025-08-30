@@ -16,19 +16,47 @@ body {
 }
 
 .header {
-    display: flex;
+    /* It was replaced by flex on image-section */
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     padding: 0 1rem;
     background-color: var(--forest-dark-green);
     color: white;
     min-height: 5dvh;
 }
 
-.image-container {
-    max-height: 100%;
+/* === nav config === */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+
+/* New addtion: Center the image container */
+.image-section{
     display: flex;
     justify-content: center;
+}
+
+.image-container {
+    max-height: 100%;
+    /* display: flex;
+    align-items: center; */
+    display: inline-block;
+    text-align: center;
+}
+
+/* New addtion: Center the image */
+.image-container img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .main {
